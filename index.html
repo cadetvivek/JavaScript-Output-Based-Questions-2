@@ -195,27 +195,60 @@
 </script>
 
 <script>
-  const name = "vivek";
-  const age = 21;
-  console.log(isNaN(name))
-  console.log(isNaN(age))
+  // const name = "vivek";
+  // const age = 21;
+  // console.log(isNaN(name))
+  // console.log(isNaN(age))
 </script>
 
 <script>
 
-  let person = {name:"Anil"}
-  // how can modify person name
-  Object.seal(person)
-  person.age=21
-  console.log(person)
+  // let person = {name:"Anil"}
+  // // how can modify person name
+  // Object.seal(person)
+  // person.age=21
+  // console.log(person)
+
 </script>
+
+<script>
+  // let randomvalue ={name:'Kiran'};
+  // randomvalue = 23;  //we can reassign the value because of let 
+  // //so it's beacome a number  
+  // if(!typeof randomvalue ==='string'){ //! (logical NOT operator):
+  //   //! applied to "number" becomes false
+  //   console.log(' its not a string')
+  // }else{
+  //   console.log('its a string') // this is a output
+  // }
+</script>
+
+<script>
+  const user = {
+    email:'myemail@gamil.com',
+    updateEmail:email=>{ //because we are using arror function 
+      //here they dose not have own context of it. because this 
+      //this is globle context and not this user object write here
+      //this is not actully updating user
+      this.email=email
+    }
+  }
+  user.updateEmail('newemail@gmail.com')
+       //console.log(this.email) becasue here is this update the 
+       //email property in the bloble context  after we get both outpu
+  console.log(user.email)//myemail@gamil.com
+</script>
+
 <script></script>
+
 <script></script>
+
 <script></script>
+
 <script></script>
+
 <script></script>
-<script></script>
-<script></script>
+
 <script></script>
 <script></script>
 <script></script>
